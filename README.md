@@ -1,4 +1,4 @@
-📝 #To-Do List App (Frontend) 
+📝 To-Do List App (Frontend) 
 - This is the frontend of a simple and elegant To-Do List application built with React.js. It allows users to add, edit, and delete tasks with a clean and responsive user interface.
 
 ✨ **Features**
