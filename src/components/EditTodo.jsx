@@ -8,7 +8,7 @@ const EditTodo = ({ todo }) => {
     e.preventDefault();
     try {
       const body = { description };
-      await fetch(`http://localhost:5000/todos/${todo.todo_id}`, {
+      await fetch(`https://to-do-back-end-production.up.railway.app/todos/${todo.todo_id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
