@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 
 const InputTodo = () => {
   const [description, setDescription] = useState("");
@@ -21,15 +21,16 @@ const InputTodo = () => {
 
   return (
     <>
-      <h1 className="text-center mt-5">TO DO</h1>
-      <form className="d-flex mt-5" onSubmit={onSubmitForm}>
+      <h1 className="title">TO DO</h1>
+      <form className="form" onSubmit={onSubmitForm}>
         <input
           type="text"
-          className="form-control"
+          className="form-input"
+          placeholder="Enter a new todo..."
           value={description}
           onChange={e => setDescription(e.target.value)}
         />
-        <button className="btn btn-success">Add</button>
+        <button className="btn btn-success" type="submit">Add</button>
       </form>
     </>
   );
